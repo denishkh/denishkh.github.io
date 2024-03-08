@@ -1,2 +1,2 @@
 Hello, welcome to dannysvere!
-Coming soon...
+Work in progress!
