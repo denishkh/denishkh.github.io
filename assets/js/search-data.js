@@ -34,45 +34,7 @@ ninja.data = [{
             window.location.href = "/blog/2026/code/";
           
         },
-      },{id: "post-a-post-with-pseudo-code",
-        
-          title: "a post with pseudo code",
-        
-        description: "this is what included pseudo code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/pseudocode/";
-          
-        },
-      },{id: "post-a-post-with-videos",
-        
-          title: "a post with videos",
-        
-        description: "this is what included videos could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2023/videos/";
-          
-        },
-      },{id: "post-a-post-with-math",
-        
-          title: "a post with math",
-        
-        description: "an example of a blog post with some math",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/math/";
-          
-        },
-      },{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "projects-real-time-finger-kinematics-decoding-with-multimodal-sensing",
+      },{id: "projects-real-time-finger-kinematics-decoding-with-multimodal-sensing",
           title: 'Real-Time Finger Kinematics Decoding with Multimodal Sensing',
           description: "Real-time finger-angle prediction from forearm ultrasound, EMG and IMU for assistive robotics",
           section: "Projects",handler: () => {
