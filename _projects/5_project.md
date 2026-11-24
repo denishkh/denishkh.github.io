@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sensor-Agnostic World Model for Hand-Motion Decoding
-description: One model that estimates hand state from whichever sensors are available, inspired by the Thousand Brains Theory
+title: Sensor-Agnostic Physical State Model for Hand-Motion Decoding
+description: Learning a shared physical latent representation across ultrasound, EMG, and varying sensor configurations.
 img: assets/video/wm_sensors_card.gif
 importance: 1.5
 category: work
@@ -13,67 +13,70 @@ category: work
   </div>
 </div>
 <div class="caption">
-Estimated finger motion from ultrasound, EMG, and both together. The shaded band is the model's uncertainty, which shrinks as sensors are combined.
+Estimated finger motion from ultrasound, EMG, and both together. The shaded band represents the model's uncertainty, which decreases as complementary sensory information is combined.
 </div>
 
 ### Application
 
-Prosthetic hands and exoskeletons need control signals that keep working in daily life. Wearable sensors move, get swapped for different devices, or fail. Most decoders are trained for one sensor in one position and break when any of that changes.
+Prosthetic hands and exoskeletons need control signals that remain reliable in daily life. Wearable sensors can shift, be replaced with different devices, or fail. Conventional decoders are often trained for a specific sensor and placement, making them sensitive to changes in sensing conditions.
 
 ---
 
 ### Research Question
 
-*Can one model estimate hand state from ultrasound and EMG together, keep working when a sensor moves, changes or drops out, and adapt quickly without forgetting what it already learned?*
+**Can a unified model learn a shared physical latent representation from ultrasound and EMG that enables robust hand-state estimation across changes in sensor placement, orientation, and configuration?**
 
 ---
 
 ### Idea
 
-Inspired by the [Thousand Brains Theory](https://thousandbrains.org/), the model keeps a shared estimate of the physical state of the hand and forearm. Each sensor, whether B-mode ultrasound, sparse wearable ultrasound or EMG, works as a plug-in module that adds its own evidence to that shared estimate. The model also tracks how certain it is, so unreliable sensors count for less.
+Inspired by the [Thousand Brains Theory](https://thousandbrains.org/), the model maintains a shared internal representation of the physical state of the hand and forearm. Each sensor, whether B-mode ultrasound, sparse wearable ultrasound, or EMG, acts as an independent module that contributes evidence to the shared state estimate. The model also quantifies uncertainty, allowing less reliable observations to carry less weight.
 
 <div class="row mt-3">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/wm_concept.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Ultrasound, sparse ultrasound, EMG or any other sensor feeding one shared physical state that drives the hand" %}
+    {% include figure.liquid path="assets/img/wm_concept.png" class="img-fluid rounded z-depth-1" zoomable=true alt="Multiple sensing modalities contributing to a shared physical state representation" %}
   </div>
 </div>
 <div class="caption">
-Any sensor feeds one shared physical state (hand, tissue, activation), which drives the hand.
+Multiple sensing modalities contribute to a shared physical state representation of hand posture, tissue deformation, and muscle activation for hand-motion decoding.
 </div>
 
-The world model describes which physical states are plausible and what each sensor sees in a given state:
+The physical state model captures the distribution of underlying physical states and how each sensor observes them:
 
 $$
 \mathbf{x} \sim \mathcal{N}\left(\boldsymbol{\mu}_0, \mathbf{P}_0\right), \qquad
-\mathbf{c}_s = \mathbf{H}_s \mathbf{x} + \boldsymbol{\varepsilon}_s, \quad \boldsymbol{\varepsilon}_s \sim \mathcal{N}\left(\mathbf{0}, \mathbf{R}_s\right)
+\mathbf{c}_s = \mathbf{H}_s \mathbf{x} + \boldsymbol{\varepsilon}_s, \quad
+\boldsymbol{\varepsilon}_s \sim \mathcal{N}\left(\mathbf{0}, \mathbf{R}_s\right)
 $$
 
-where $$\mathbf{x}$$ is the physical state (hand, tissue, activation) and $$\mathbf{c}_s$$ the reading from sensor $$s$$. Running it in reverse gives the state and its uncertainty from whichever sensors are present:
+where $$\mathbf{x}$$ represents the underlying physical state, $$\mathbf{c}_s$$ represents the observations from sensor $$s$$, $$\mathbf{H}_s$$ describes its observation model, and $$\mathbf{R}_s$$ represents its measurement uncertainty.
+
+Assuming conditionally independent sensor noise, Bayesian inference combines the available observations to estimate the shared physical state and its uncertainty:
 
 $$
-\mathbf{P}^{-1} = \mathbf{P}_0^{-1} + \sum_{s} \mathbf{H}_s^{\top} \mathbf{R}_s^{-1} \mathbf{H}_s
+\mathbf{P}^{-1} = \mathbf{P}_0^{-1} + \sum_s \mathbf{H}_s^{\top} \mathbf{R}_s^{-1} \mathbf{H}_s
 $$
 
-Each sensor adds certainty, so losing one only widens the uncertainty instead of breaking the estimate.
+Each reliable sensor contributes information to the shared state estimate. When a sensor becomes unavailable, the model continues inference using the remaining observations, with potentially increased uncertainty.
 
 ---
 
 ### Results
 
-- Works across different ultrasound devices without retraining.
-- Degrades gracefully when sensors drop out or fail.
-- Adapts to a new sensor placement from a few minutes of calibration, without forgetting.
+- Generalizes across ultrasound devices without retraining.
+- Maintains state estimation under sensor dropout and failure.
+- Adapts to new sensor placements with a few minutes of calibration while retaining previously learned knowledge.
 
-*More details will follow after publication.*
+**More details will follow after publication.**
 
 ---
 
 ### Significance
 
-A decoder that is not tied to one sensor, one device or one placement is a step toward assistive devices people can rely on every day.
+By decoupling the underlying physical state from the sensing modality and configuration, this approach aims to reduce dependence on specific sensors and repeated calibration, enabling more reliable control of wearable assistive devices.
 
 ---
 
 ### Tools & Skills
 
-Ultrasound (B-mode, sparse) · EMG · Bayesian sensor fusion · Continual learning · Uncertainty estimation
+Ultrasound (B-mode, sparse) · EMG · Latent state modeling · Bayesian sensor fusion · Continual learning · Uncertainty estimation

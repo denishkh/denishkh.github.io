@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Real-Time Finger Kinematics Decoding with Multimodal Sensing
-description: Real-time finger-angle prediction from forearm ultrasound, EMG and IMU for assistive robotics
+description: Real-time finger-angle prediction from forearm ultrasound, EMG and IMU for application in assistive robotics
 img: assets/img/ultrasound_hand.gif
 importance: 1
 category: work
@@ -33,7 +33,7 @@ The same signal can drive assistive devices such as hand exoskeletons and prosth
 
 ### Research Question
 
-*Can forearm muscle activity, sensed with ultrasound, EMG and IMU, be decoded into continuous finger angles in real time, across different arm positions and as the sensor shrinks to something wearable?*
+*Can forearm muscle activity, sensed with ultrasound (Dense and Sparse), EMG and IMU, be decoded into continuous finger angles in real time, across different arm positions?*
 
 ---
 
@@ -86,7 +86,7 @@ A real wearable sensor, evaluated on a separate recording streamed in real time.
 
 ### Significance
 
-Accuracy holds as the sensor shrinks from a clinical probe to a wearable device, which is the step needed to take ultrasound control out of the lab.
+Accuracy holds as the sensor is changed from a clinical probe to a wearable device (Dense to Sparse), which is the step needed to take ultrasound control out of the lab.
 
 ---
 

@@ -26,6 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Namaste, I am Denish, and I am a wannabe mechanic. I love doing full stack robotics from idea, design, prototype, code, test, and repeat. Most importantly, I really want to see my work improving people's lives. Right now, I am building an assistive hand exoskeleton for people with stroke and neurological injury as a part of my PhD in bioengineering at George Mason University. I am also working on intuitive control strategies of those hand robotic devices using multimodal sensing using EMG, IMU and Ultrasound.
+Namaste, I am Denish, and I am a wannabe mechanic. I love doing full-stack robotics, from idea, design, and prototyping to coding, testing, and repeating. Most importantly, I really want to see my work improving people's lives.
 
-Additionally, I am an admirer of science and mathematics. I also love making, shooting and editing themed videos of my life experiences. You can check my [Youtube](https://www.youtube.com/@dannysverse) and  [instagram](https://www.instagram.com/dannysverse/).
+Right now, I am building assistive hand exoskeletons for people with stroke and neurological injuries as part of my PhD in Bioengineering at George Mason University. I am also working on making these robotic devices more intuitive and adaptable through multimodal sensing using EMG, IMU, and ultrasound. My recent research focuses on sensor-agnostic intelligence, where a model learns an internal representation of the underlying physical state rather than relying on a specific sensor, allowing it to adapt to changes in sensing modalities, placements, and configurations.
+
+Additionally, I am an admirer of science and mathematics. I also love making, shooting, and editing themed videos of my life experiences. You can check out my [YouTube](https://www.youtube.com/@dannysverse) and [Instagram](https://www.instagram.com/dannysverse/).

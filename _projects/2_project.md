@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "DEXTER: Wearable Hand Exoskeleton"
-description: A 450 g tendon-driven hand exoskeleton controlled by the grip strength a user still has after stroke
+description: A 450 g tendon-driven hand exoskeleton controlled by isometric grip force preserved in people post stroke
 img: assets/img/handexo_card.jpg
 importance: 2
 category: work
@@ -33,7 +33,7 @@ Pilot test: a participant with stroke moving blocks with help from the exoskelet
 
 ### Research Question
 
-*Can a hand exoskeleton be tailored to each user, made compact enough to wear, and controlled intuitively using the motor function that remains after injury?*
+*Can a hand exoskeleton be tailored to each user, made compact enough to wear, and controlled intuitively using the isometric grip force that is preserved even after injury?*
 
 ---
 
@@ -61,9 +61,9 @@ The key insight is that the *shape* of that path depends only on the stiffness *
 Same tendon, different stiffness distributions: tuning the bellows moves flexion to the MCP joint, the PIP joint, or across all joints, so the fingertip trajectory can be designed for each user.
 </div>
 
-**A foldable rigid-chain actuator.** Bulky actuators are one of the main reasons hand exoskeletons stay in the lab. A custom 80 N rigid-chain actuator pushes and pulls like a rod but folds away when retracted, making it 49% more compact than the compared ball-screw design.
+**A foldable rigid-chain actuator.** Bulky actuators are one of the main reasons hand exoskeletons remain limited in the lab. A custom 80 N rigid-chain actuator pushes and pulls like a rod but folds away when retracted, making it 49% more compact than the compared ball-screw design.
 
-**Control from residual grip.** Even when movement is weak, people often keep some ability to squeeze. DEXTER reads this small isometric grip force and turns it into a command, so control feels natural and needs little training.
+**Control from residual grip.** Even when movement is weak, people with stroke often keep some ability to squeeze. DEXTER reads this small isometric grip force and turns it into a command, so control feels natural and needs little training.
 
 ---
 

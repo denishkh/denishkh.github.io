@@ -31,7 +31,7 @@ As an early engineer and battery team lead at Ebolt Mobility, an EV startup in N
 The layout was driven by packaging, airflow and structural strength as much as by electrical requirements.
 
 - **Cells and bus bars:** parallel-grouped cells for even heat distribution, with nickel-strip bus bars sized for current sharing and reliable welds.
-- **Cooling:** forced air channelled from the vehicle chassis. Inter-cell spacing was tuned to balance heat dissipation against pack size. Immersion cooling was also explored at concept level.
+- **Cooling:** forced air channelled from the vehicle chassis. Inter-cell spacing was tuned to balance heat dissipation against pack size. Immersion cooling was also explored at concept and initial prototype level.
 - **Safety:** BMS-based electrical protection and temperature sensing, an IP67-sealed enclosure, and pressure-relief valves for thermal events.
 
 ---
