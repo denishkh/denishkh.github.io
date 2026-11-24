@@ -1,0 +1,111 @@
+cv:
+  name: Denish Khatiwada
+  label: PhD Student in Bioengineering
+  email: dkhatiw@gmu.edu
+  location: Fairfax, Virginia, USA
+  image: prof_pic.jpg
+  summary: PhD student developing a wearable hand exoskeleton for stroke patients and intuitive control strategies using fused sonomyography, EMG, and IMU. Demonstrated proficiency in mechatronics, prototyping, and testing through various robotics projects.
+
+  social_networks:
+    - network: LinkedIn
+      username: denish-khatiwada-738615155
+    - network: GitHub
+      username: denishkh
+
+  address:
+    street: ""
+    city: Fairfax
+    region: Virginia
+    postalCode: ""
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: George Mason University
+        location: Virginia, USA
+        area: Bioengineering
+        studyType: PhD
+        start_date: 2023-08-01
+        end_date: Present
+        score: "3.94/4"
+        courses: "Linear Systems and Control, Applied Statistics, Image Processing, Machine Learning, Digital Signal Processing"
+      
+      - institution: Tribhuvan University
+        location: Nepal
+        area: Mechanical Engineering
+        studyType: Bachelor's
+        start_date: 2016-11-01
+        end_date: 2020-11-01
+        score: "80.74/100"
+        courses: "Engineering Dynamics, Mechanics of Solids, Theory of Machines, Mechanical Design, Material Science, Instrumentation, CAD"
+
+    Experience:
+      - company: Empower Lab, George Mason University
+        position: Graduate Research Assistant
+        location: Fairfax, VA
+        start_date: 2023-08-01
+        end_date: Present
+        highlights:
+          - Designed and prototyped a light weight (450 grams), tendon-driven soft hand exoskeleton for stroke patients.
+          - Developed and characterized a novel, 3D-printable, compact rigid chain actuator (80 N output).
+          - Implemented residual force control strategy, admittance, and position control in the soft hand exoskeleton.
+          - Built a pipeline for multimodal data collection using EMG, sonomyography (SMG) and IMU.
+
+      - company: Ebolt Mobility
+        position: Product Development Engineer
+        location: Lalitpur, Nepal
+        start_date: 2021-04-01
+        end_date: 2023-03-01
+        summary: Worked as an early employee of the electric vehicle startup; shaped key features, and led the battery team.
+        highlights:
+          - Designed and prototyped a 1.8 kWh lithium-ion battery pack and thermal management system.
+          - Performed thermo-electric and structural simulations in ANSYS.
+
+      - company: Robotics Club, Tribhuvan University
+        position: Robotics Team Member
+        location: Pulchowk, Nepal
+        start_date: 2016-12-01
+        end_date: 2020-12-01
+        highlights:
+          - Represented Nepal in ABU Robocon (2017–2019) International Robot Contest.
+          - Designed and simulated a unique three-actuator based quadruped robot using CoppeliaSim and Python.
+          - Built robotic arms and holonomic drives; synthesized and tested multiple robot mechanisms.
+
+    Publications:
+      - title: Design and Characterization of Rigid Chain Actuator for Under-Actuated Tendon-Driven Hand Exoskeleton
+        authors:
+          - Denish Khatiwada
+        publisher: IEEE EMBS BioRob 2024
+        releaseDate: 2024-09-01
+        url: https://ieeexplore.ieee.org/abstract/document/10719922/
+        summary: Published and presented in Germany regarding wearable robotics actuation.
+
+    Projects:
+      - name: Segmentation of carotid artery walls using U-NET
+        summary: Worked on wall segmentation of the carotid artery and calculated wall thickness using deep learning.
+      - name: Design and simulation of hydro turbine runner
+        summary: Parameterized blade geometries and performed numerical simulations in ANSYS for a Turgo turbine.
+      - name: R&D project selection using machine learning
+        summary: Applied classical ML and neural networks to predict funding selection with SHAP explainable AI.
+      - name: Tool path optimization using genetic algorithms
+        summary: Implemented GA to find the shortest path for drilling holes in a custom PCB.
+
+    Skills:
+      - name: Software
+        icon: fa-solid fa-desktop
+        keywords: "SolidWorks (Certified), ANSYS Fluent/APDL, CopelliaSim, ADAMS, CATIA V6"
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "Python, MATLAB, C/C++"
+      - name: Prototyping
+        icon: fa-solid fa-gears
+        keywords: "Multi-material 3D Printing, Lathe, Milling, Laser cutting, PCB design (KiCAD)"
+
+    Languages:
+      - name: English
+        summary: Professional Working Proficiency
+      - name: Nepali
+        summary: Native Speaker
+    
+    # This empty section prevents the 'concat' error in cv.liquid
+    Volunteer: []

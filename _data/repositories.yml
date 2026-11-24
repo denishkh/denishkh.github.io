@@ -1,0 +1,8 @@
+github_users:
+  - denishkh
+
+repo_description_lines_max: 2
+
+github_repos:
+  - denishkh/finger-trajectory-tracking
+  - denishkh/delsys-legacy-emg-read-py
