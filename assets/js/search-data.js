@@ -36,12 +36,12 @@ ninja.data = [{
         },
       },{id: "projects-real-time-finger-kinematics-decoding-with-multimodal-sensing",
           title: 'Real-Time Finger Kinematics Decoding with Multimodal Sensing',
-          description: "Real-time finger-angle prediction from forearm ultrasound, EMG and IMU for assistive robotics",
+          description: "Real-time finger-angle prediction from forearm ultrasound, EMG and IMU for application in assistive robotics",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-dexter-wearable-hand-exoskeleton",
           title: 'DEXTER: Wearable Hand Exoskeleton',
-          description: "A 450 g tendon-driven hand exoskeleton controlled by the grip strength a user still has after stroke",
+          description: "A 450 g tendon-driven hand exoskeleton controlled by isometric grip force preserved in people post stroke",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-abu-robocon-robotics-projects-2017-2019",
@@ -54,9 +54,9 @@ ninja.data = [{
           description: "Battery pack design, simulation, and thermal validation for electric two-wheelers",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-sensor-agnostic-world-model-for-hand-motion-decoding",
-          title: 'Sensor-Agnostic World Model for Hand-Motion Decoding',
-          description: "One model that estimates hand state from whichever sensors are available, inspired by the Thousand Brains Theory",
+            },},{id: "projects-sensor-agnostic-physical-state-model-for-hand-motion-decoding",
+          title: 'Sensor-Agnostic Physical State Model for Hand-Motion Decoding',
+          description: "Learning a shared physical latent representation across ultrasound, EMG, and varying sensor configurations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{
