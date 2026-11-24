@@ -24,7 +24,7 @@ Prosthetic hands and exoskeletons need control signals that remain reliable in d
 
 ### Research Question
 
-**Can a unified model learn a shared physical latent representation from ultrasound and EMG that enables robust hand-state estimation across changes in sensor placement, orientation, and configuration?**
+*Can a unified model learn a shared physical latent representation from ultrasound and EMG that enables robust hand-state estimation across changes in sensor placement, orientation, and configuration?*
 
 ---
 
@@ -67,7 +67,7 @@ Each reliable sensor contributes information to the shared state estimate. When 
 - Maintains state estimation under sensor dropout and failure.
 - Adapts to new sensor placements with a few minutes of calibration while retaining previously learned knowledge.
 
-**More details will follow after publication.**
+*More details will follow after publication.*
 
 ---
 
