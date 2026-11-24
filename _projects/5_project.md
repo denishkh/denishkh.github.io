@@ -2,7 +2,7 @@
 layout: page
 title: Sensor-Agnostic World Model for Hand-Motion Decoding
 description: One model that estimates hand state from whichever sensors are available, inspired by the Thousand Brains Theory
-img: assets/video/wm_sensors.gif
+img: assets/video/wm_sensors_card.gif
 importance: 1.5
 category: work
 ---
